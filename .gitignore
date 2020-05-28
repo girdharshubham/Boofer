@@ -18,3 +18,4 @@
 *.iml
 */*.iml
 .idea
+bin

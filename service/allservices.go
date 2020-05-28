@@ -12,6 +12,6 @@ func V1Routes(r *gin.Engine) {
 	{
 		v1.GET("/healthz", api.Healthz)
 		v1.GET("/about", api.About)
-		v1.GET("", api.Home)
+		v1.GET("/", api.Home)
 	}
 }

@@ -25,4 +25,26 @@ Gin is a web framework written in Go (Golang). This template provides a ready to
  GET /v1/about
  GET /v1
  ```
- 
+
+## How to run
+**Prerequisite:** You should have Go set up on your system.
+ * Run test cases with coverage
+   ```
+   make test
+   ```
+ * View Coverage
+   ```
+   make view
+   ```
+ * Building the binairy
+   ```
+   make package
+   ```
+ * Run the project
+   ```
+   make run
+   ```
+ * Clean up
+   ```
+   make clean
+   ```

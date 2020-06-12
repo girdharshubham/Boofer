@@ -6,12 +6,14 @@ import (
 )
 
 func V1Routes(r *gin.Engine) {
-	v1 := r.Group("/v1", gin.BasicAuth(gin.Accounts{
+	{
+		r.GET("/healthz", api.Healthz)
+		r.GET("/about", api.About)
+	}
+	authenticated := r.Group("/v1", gin.BasicAuth(gin.Accounts{
 		"girdharshubham": "password",
 	}))
 	{
-		v1.GET("/healthz", api.Healthz)
-		v1.GET("/about", api.About)
-		v1.GET("/", api.Home)
+		authenticated.GET("/", api.Home)
 	}
 }

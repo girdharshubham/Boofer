@@ -21,8 +21,8 @@ Gin is a web framework written in Go (Golang). This template provides a ready to
 
 ## Routes
  ```
- GET /v1/healthz
- GET /v1/about
+ GET /healthz
+ GET /about
  GET /v1
  ```
 

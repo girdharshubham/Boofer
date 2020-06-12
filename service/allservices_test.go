@@ -13,7 +13,7 @@ var (
 	err         error
 	username             = "girdharshubham"
 	password             = "password"
-	routesToHit []string = []string{"/v1/healthz", "/v1/about", "/v1/"}
+	routesToHit []string = []string{"/healthz", "/about", "/v1/"}
 )
 
 func beforeAll() (r *gin.Engine) {
